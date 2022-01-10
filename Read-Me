@@ -1,0 +1,64 @@
+Funktionella interface - egendefinierade
+Översikt
+
+Uppgifterna behandlar egendefinierade funktionella interface. I en senare övningsuppgift
+kommer vi även behandla fördefinierade funktionella interface som finns i Java.
+Ämnesområdet har inga beroenden till tidigare moment i kursen, och inga särskilda
+förkunskapskrav utöver de allmänna programmeringskunskaper i Java som ingått i den
+tidigare kursen Inledande programmering i Java
+Genomförande
+Övningsuppgifter är inte ett obligatoriskt moment i kursen och genomförs individuellt eller i
+grupp. Uppgifterna är indelade i 2 nivåer.
+
+Nivå 1 är generellt mer grundläggande uppgifter som ligger nära det vi diskutera under
+föreläsningarna och lektioner. Har man god koll på uppgifterna i nivå 1 har man en god
+grund för att klara av att bli godkänd i kursen på de obligatoriska momenten.
+
+Nivå 2 är uppgifterna som är lite svårare, och som kräver lite mer självständigt klurande och
+självständigt arbetande. Har man god koll på uppgifterna i nivå 2 så har man en god grund
+att stå på för att kunna få ett högre betyg i kursen.
+Uppgifter
+
+Nivå 1
+1. Skapa en abstrakt klass “MyFunc”, som i sin tur innehåller en abstrakt metod “apply”
+som tar in en integer och returnerar en integer
+
+2. I din main-klass, försök skapa ett objekt av din abstrakta klass
+
+3. Eftersom det inte går utan att ge den en implementation, ge ditt objekt en
+implementation med hjälp av två måsvingar. (antingen via IntelliJs autocomplete eller
+manuellt). Låt implementationen bestå av att något görs med siffran (t.ex. dubblerar
+den) innan du returnerar den
+
+4. Du har nu skapat vad som kallas en anonym innerklass, "anonymous inner class". En
+anonym innerklass motsvarar att du tillfälligt skapat en (namnlös) klass som ärver
+från din abstrakta klass, och sedan givits den specifika implementation av de abstrakta
+delarna som står innanför måsvingarna, för att kunna skapa ett enskilt objekt av den
+här tillfälliga, namnlösa klassen.
+5. Ändra i din kod, så att din abstrakta klass blir ett interface istället.
+
+6. Ge ditt nya interface annotationen @FunctionalInterface. Fundera på vad
+@FunctionalInterface gör, och testa att experimentera med att lägga till eller ta bort
+saker från ditt interface för att se när @FunktionalInterface slår rött
+
+7. Skapa ett antal olika implementation av ditt funktionella interface ute i din main-klass
+
+8. Skapa en metod som tar in en parameter av typen ditt funktionella interface, och som
+sedan anropar metoden i ditt funktionella interface
+
+9. Mata in dina olika implementationer av ditt funktionella interface i din metod. Testkör
+och se skillnaden
+
+10. Byt ut dina implementationer mot lambda expressions och testkör de olika
+implementationerna igen
+
+11. Testa att skriv in olika lambda-expressions direkt som argument till din metod
+
+12. Grattis - du har nu testat ungefär så nära Java kommer till att skicka funktioner som
+argument in till andra funktioner. En viktig utveckling som kom med Java 8, och som
+senare kommer vara centralt för vår användning av Streams.
+
+Nivå 2
+1. Skriv en metod, som dels kan ta in en siffra, dels ett lambda-uttryck, som parametrar.
+Lambda-uttrycket ska definiera ett villkor för siffran, och metoden skall sedan
+returnera true or false beroende på om siffran uppfyller villkoret.
