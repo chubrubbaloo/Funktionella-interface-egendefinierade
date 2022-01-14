@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
 
         /*
-        MyFunc doubleMe = new MyFunc() {
+        MyFunc squared = new MyFunc() {
             @Override
             public int apply(int x) {
                 return x * x;
