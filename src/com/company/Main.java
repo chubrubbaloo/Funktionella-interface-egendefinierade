@@ -29,7 +29,7 @@ public class Main {
                 return x / 2;
             }
         };
-        useInterface(doubleMe,10);
+        useInterface(squared,10);
         useInterface(divideMe,10);
 
          */
