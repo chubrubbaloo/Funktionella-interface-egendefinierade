@@ -34,8 +34,8 @@ public class Main {
 
          */
 
-        MyFunc doubleMe = x -> x * x;
-        MyFunc divideMe = x -> x / 2;
+        MyFunc squared = x -> x * x;
+        MyFunc squared = x -> x / 2;
         useInterface(doubleMe, 10);
         useInterface(divideMe, 10);
         useInterface(x -> x + x, 10);
